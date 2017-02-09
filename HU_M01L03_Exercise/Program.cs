@@ -22,6 +22,10 @@
             // Print the numbers multiplying
             System.Console.WriteLine("The multiplying is: {0}", numOne * numTwo * NumThree);
 
+            // Calculate rectangle whitespace based on user input
+            System.Console.WriteLine("Enter rectangle length:");
+            double length = double.Parse
+
         }
     }
 }
