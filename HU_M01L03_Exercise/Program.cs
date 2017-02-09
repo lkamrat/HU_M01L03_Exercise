@@ -28,6 +28,18 @@
             // Calculate rectangle whitespace based on user input
             System.Console.WriteLine("The rectangle whitespace is: {0}", length * hight);
 
+            // Define circle radius based on user input
+            System.Console.WriteLine("Enter circle radius");
+            double radius = double.Parse(System.Console.ReadLine());
+
+            double pi = 3.14;
+            System.Console.WriteLine("Pi will always be {0}",pi);
+
+            // Calculate circle whitespace and diameter based on user input
+            System.Console.WriteLine("Circle whitespace based on the radius you provided is: {0}", (radius * radius) * pi);
+            System.Console.WriteLine("Circle diameter based on the radius you provided is: {0}", radius * pi * 2);
+
+
         }
     }
 }
