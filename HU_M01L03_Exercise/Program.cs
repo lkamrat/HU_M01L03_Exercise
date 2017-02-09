@@ -5,7 +5,7 @@
     {
         static void Main(string[] args)
         {
-            // Define double numbers (we need the avarage & multiplying of those numbers) from user input
+            // Define random double numbers (we need the avarage & multiplying of those numbers) from user input
             System.Console.WriteLine("Enter number 01");
             double numOne = double.Parse(System.Console.ReadLine());
             System.Console.WriteLine("Enter number 02");
@@ -13,10 +13,10 @@
             System.Console.WriteLine("Enter number 03");
             double NumThree = double.Parse(System.Console.ReadLine());
 
-            // Print the numbers avarage
+            // Print the random numbers avarage
             System.Console.WriteLine("The avarage is: {0}", (numOne + numTwo + NumThree) / 3);
 
-            // Print the numbers multiplying
+            // Print the random numbers multiplying
             System.Console.WriteLine("The multiplying is: {0}", numOne * numTwo * NumThree);
 
             // Define rectangle length and hight based on user input
@@ -39,7 +39,13 @@
             System.Console.WriteLine("Circle whitespace based on the radius you provided is: {0}", (radius * radius) * pi);
             System.Console.WriteLine("Circle diameter based on the radius you provided is: {0}", radius * pi * 2);
 
+            // Define movie length in minutes
+            System.Console.WriteLine("Enter movie length in minutes");
+            double moviemin = double.Parse(System.Console.ReadLine());
 
+            // Calculate movie length in hours based on movie length in minutes
+            double moviehr = (moviemin / 60);
+            System.Console.WriteLine("The movie length in hours is: {0}", moviehr);
         }
     }
 }
