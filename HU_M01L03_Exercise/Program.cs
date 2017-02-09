@@ -13,18 +13,20 @@
             System.Console.WriteLine("Enter number 03");
             double NumThree = double.Parse(System.Console.ReadLine());
 
-            // Print the numbers
-            System.Console.WriteLine("One: {0}, Two {1}, Three {2}", numOne, numTwo, NumThree);
-
             // Print the numbers avarage
             System.Console.WriteLine("The avarage is: {0}", (numOne + numTwo + NumThree) / 3);
 
             // Print the numbers multiplying
             System.Console.WriteLine("The multiplying is: {0}", numOne * numTwo * NumThree);
 
-            // Calculate rectangle whitespace based on user input
+            // Define rectangle length and hight based on user input
             System.Console.WriteLine("Enter rectangle length:");
-            double length = double.Parse
+            double length = double.Parse(System.Console.ReadLine());
+            System.Console.WriteLine("Enter rectangle hight");
+            double hight = double.Parse(System.Console.ReadLine());
+
+            // Calculate rectangle whitespace based on user input
+            System.Console.WriteLine("The rectangle whitespace is: {0}", length * hight);
 
         }
     }
