@@ -41,11 +41,13 @@
 
             // Define movie length in minutes
             System.Console.WriteLine("Enter movie length in minutes");
-            double moviemin = double.Parse(System.Console.ReadLine());
+            int movieMin = int.Parse(System.Console.ReadLine());
 
             // Calculate movie length in hours based on movie length in minutes
-            double moviehr = (moviemin / 60);
-            System.Console.WriteLine("The movie length in hours is: {0}", moviehr);
+            int movieHr = (movieMin / 60);
+            
+
+            
         }
     }
 }
