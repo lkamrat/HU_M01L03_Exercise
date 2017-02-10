@@ -41,18 +41,29 @@
 
             // Define movie length in minutes
             System.Console.WriteLine("Enter movie length in minutes");
-            double movieMin = double.Parse(System.Console.ReadLine());
+            int movieMin = int.Parse(System.Console.ReadLine());
 
-            // Calculate movie length in hours based on movie length in minutes using Casting and Convert
-            double movieMinExpNum = (movieMin / 60); // x.xxxxxx
-            int movieHrExpNum = (int)movieMinExpNum; // This will give the number of hours after Explicit Casting
-            double movieMinNum = (movieMin % 60); // This will give the number of minutes
-            string hrString = System.Convert.ToString(movieHrExpNum) + " hour and"; // Converting the explicit hour value to string
-            string minString = System.Convert.ToString(movieMinNum) + " minutes"; // Converting the minutes number to string
-            System.Console.WriteLine("The movie length is: {0}:{1}", movieHrExpNum, movieMinNum); // This will show result based on numbers
-            System.Console.WriteLine("The movie length is: {0} {1}", hrString, minString); // This will show result based on converting integer and double to string
+            // Calculate movie length in hours based on movie length in minutes
+            int movieHrNum = (movieMin / 60);
+            int movieMinNum = (movieMin % 60);
+            System.Console.WriteLine("The movie length is: {0}:{1}", movieHrNum, movieMinNum); // This will show result based on numbers
+            System.Console.WriteLine("The movie length is: " + movieHrNum + " hour, " + movieMinNum + " minutes"); // This will show result 
 
-            
+            // Show user number input in words without using Convert.ToString
+            System.Console.WriteLine("Enter a four digit number");
+            int fourDigitNum = int.Parse(System.Console.ReadLine());
+            int thousands = fourDigitNum / 1000;
+            int remainder = fourDigitNum % 1000;
+            int hundreds = remainder / 100;
+            remainder = remainder % 100;
+            int tens = remainder / 10;
+            remainder = remainder % 10;
+            int units = remainder; 
+                        
+            System.Console.WriteLine("The number is: {0} thousands, {1} hundreds, {2} tens, {3} ones", thousands, hundreds, tens, units);
+            System.Console.WriteLine("The number is: " + thousands + " thousands, " + hundreds + " hundreds, " + tens + " tens, " + units + " ones ");
+
+
         }
     }
 }
