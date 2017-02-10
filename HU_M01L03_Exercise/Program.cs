@@ -41,11 +41,16 @@
 
             // Define movie length in minutes
             System.Console.WriteLine("Enter movie length in minutes");
-            int movieMin = int.Parse(System.Console.ReadLine());
+            double movieMin = double.Parse(System.Console.ReadLine());
 
-            // Calculate movie length in hours based on movie length in minutes
-            int movieHr = (movieMin / 60);
-            
+            // Calculate movie length in hours based on movie length in minutes using Casting and Convert
+            double movieMinExpNum = (movieMin / 60); // x.xxxxxx
+            int movieHrExpNum = (int)movieMinExpNum; // This will give the number of hours after Explicit Casting
+            double movieMinNum = (movieMin % 60); // This will give the number of minutes
+            string hrString = System.Convert.ToString(movieHrExpNum) + " hour and"; // Converting the explicit hour value to string
+            string minString = System.Convert.ToString(movieMinNum) + " minutes"; // Converting the minutes number to string
+            System.Console.WriteLine("The movie length is: {0}:{1}", movieHrExpNum, movieMinNum); // This will show result based on numbers
+            System.Console.WriteLine("The movie length is: {0} {1}", hrString, minString); // This will show result based on converting integer and double to string
 
             
         }
