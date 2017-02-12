@@ -37,7 +37,7 @@
 
             // Calculate circle whitespace and diameter based on user input
             System.Console.WriteLine("Circle whitespace based on the radius you provided is {0}", (radius * radius) * pi);
-            System.Console.WriteLine("Circle diameter based on the radius you provided is {0}", radius * pi * 2);
+            System.Console.WriteLine("Circle diameter based on the radius you provided is {0}", radius + radius);
 
             // Define movie length in minutes
             System.Console.WriteLine("Enter movie length in minutes");
